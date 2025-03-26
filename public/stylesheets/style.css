@@ -1,0 +1,128 @@
+body {
+  padding: 30px;
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #1e1e2f, #3a3a5a); /* Gradient for depth */
+}
+
+.container {
+  padding: 30px;
+  background: linear-gradient(135deg, #00AEEF, #007BBE);
+  width: 450px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.06);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.container h3 a {
+  text-decoration: none;
+  padding: 16px 32px;
+  background: linear-gradient(135deg, #00AE4D, #007A36);
+  border-radius: 10px;
+  color: #ffffff;
+  font-weight: bold;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.container h3 a:hover {
+  background: linear-gradient(135deg, #78F5AE, #4BBF85);
+  color: #333333;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container table {
+  width: 100%;
+  margin-top: 25px;
+  border-collapse: collapse;
+}
+
+.container table tr td {
+  padding: 14px 12px;
+}
+
+.container table tr td input, 
+.container table tr td textarea {
+  border: solid 1px #bbbbbb;
+  padding: 14px;
+  border-radius: 10px;
+  width: 100%;
+  color: #333333;
+  font-size: 15px;
+  background-color: #f3f3f3;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container table tr td input:focus, 
+.container table tr td textarea:focus {
+  border-color: #00AE4D;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 174, 77, 0.6);
+}
+
+.container table tr td button, 
+.container form button {
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: bold;
+  margin: 14px 0;
+  padding: 16px 28px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.container table tr td button {
+  background: linear-gradient(135deg, #00AE4D, #007A36);
+}
+
+.container table tr td button:hover {
+  background: linear-gradient(135deg, #78F5AE, #4BBF85);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.container form button {
+  background: linear-gradient(135deg, #DD4B39, #B53125);
+}
+
+.container form button:hover {
+  background: linear-gradient(135deg, #F56C5C, #D04030);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.container .list-table {
+  width: 100%;
+  border: solid 2px #DDDDDD;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.container .list-table th {
+  border-bottom: solid 2px #DDDDDD;
+  padding: 16px;
+  background: linear-gradient(135deg, #00AE4D, #007A36);
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.container .list-table td {
+  padding: 16px 12px;
+  color: #333;
+  text-align: left;
+}
